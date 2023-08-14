@@ -1,0 +1,288 @@
+.form-position {
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .form-position {
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .form-position {
+    padding-top: 80px;
+  }
+}
+
+.search-form {
+  display: flex;
+  column-gap: 16px;
+  justify-content: center;
+  position: relative;;
+}
+
+.input-catalog {
+  width: 150px;
+  height: 40px;
+  padding: 12px 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--grey);
+}
+@media screen and (min-width: 380px) {
+ .input-catalog {
+  width: 184px;
+ }
+}
+
+@media screen and (min-width: 768px) {
+  .input-catalog {
+    width: 204px;
+    height: 44px;
+    padding: 14px 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .input-catalog {
+    width: 334px;
+    height: 48px;
+    padding: 15px 24px;
+
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
+
+.button-search {
+  stroke: var(--total-black);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-image: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%);
+}
+@media screen and (min-width: 768px) {
+  .button-search {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .button-search {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.button-search:hover {
+  border: 1px solid var(--orange);
+  stroke: var(--orange);
+  background-image: var(--total-white);
+}
+
+.search__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+@media screen and (min-width: 1280px) {
+  .search__icon {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+/* PAGINATION */
+.pagination {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.tui-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+
+  margin-bottom: 40px;
+}
+
+.tui-pagination .tui-page-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+
+  font-size: 10px;
+  line-height: 1;
+  color: var(--grey);
+  border: 1px solid var(--grey);
+  border-radius: 50%;
+}
+
+.tui-first, .tui-last {
+  display: none;
+}
+
+.svg-reset {
+  position: absolute;
+  left: 140px;
+  top: 11px;
+  stroke: var(--total-white);
+}
+
+body.light .svg-reset {
+  stroke: var(--total-black);
+}
+
+@media screen and (min-width:330px) {
+  .svg-reset {
+    left: 145px;
+  }
+}
+
+@media screen and (min-width:340px) {
+  .svg-reset {
+    left: 152.5px;
+  }
+}
+
+@media screen and (min-width:350px) {
+  .svg-reset {
+    left: 160px;
+  }
+}
+
+
+@media screen and (min-width:768px) {
+  .svg-reset {
+    left: 380px;
+    top: 13px;
+  }
+}
+
+@media screen and (min-width:780px) {
+  .svg-reset {
+    left: 387.5px;
+    top: 13px;
+  }
+}
+
+@media screen and (min-width:790px) {
+  .svg-reset {
+    left: 395px;
+    top: 13px;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .svg-reset {
+    left: 695px;
+    top: 15px;
+  }
+}
+
+@media screen and (min-width:1290px) {
+  .svg-reset {
+    left: 705px;
+    top: 15px;
+  }
+}
+
+.tui-pagination .tui-next,.tui-pagination .tui-prev,.tui-pagination .tui-next-is-ellip {
+        border: transparent;
+}
+
+.tui-pagination .tui-page-btn:hover {
+  border: 1px solid var(--orange);
+  color: var(--orange);
+}
+
+.tui-pagination .tui-is-selected:hover {
+  border: none;
+  color: var(--orange);
+}
+
+.tui-pagination .tui-is-selected,
+.tui-pagination strong {
+  color: var(--total-white);
+  background: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%);
+  border: none;
+  cursor: default;
+}
+
+.tui-pagination .tui-ico-first,
+.tui-pagination .tui-ico-last {
+  width: 11px;
+  height: 11px;
+}
+
+.tui-pagination .tui-ico-prev,
+.tui-pagination .tui-ico-next {
+  width: 8px;
+  height: 11px;
+}
+
+.tui-pagination .tui-ico-ellip {
+  width: 10px;
+  height: 2px;
+  margin-top: 14px;
+}
+
+.tui-pagination .tui-is-disabled {
+  display: none;
+}
+
+.tui-page-inputs .tui-page-current {
+  background-color: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%);
+}
+
+@media screen and (min-width: 768px) {
+  .tui-pagination {
+    column-gap: 16px;
+
+    margin-bottom: 73px;
+  }
+
+  .tui-pagination .tui-page-btn {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .tui-pagination .tui-ico-first,
+  .tui-pagination .tui-ico-last {
+    width: 14px;
+    height: 15px;
+  }
+
+  .tui-pagination .tui-ico-prev,
+  .tui-pagination .tui-ico-next {
+    width: 8px;
+    height: 15px;
+  }
+
+  .tui-pagination .tui-ico-ellip {
+    width: 10px;
+    height: 2px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .tui-pagination {
+    margin-bottom: 100px;
+  }
+}
